@@ -33,7 +33,7 @@ else {
     console.log('Invalid operator');
 }
         // varible for dynamically 
-let marks = 20;
+let number = 20;
 marks= "baaar";
 marks = true;
     // assign the large number and the udefine error
