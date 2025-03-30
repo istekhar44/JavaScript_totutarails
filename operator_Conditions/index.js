@@ -1,6 +1,2 @@
 let a= 4;
-
-
-consloe.log(a++);
-
-
+console.log(a);
