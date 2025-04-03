@@ -49,3 +49,19 @@
 // }
 // let fullname = getName("love" , "babbar");
 // console.log(fullname);
+
+// let halfName = getName("Md","Istekhar");
+// console.log(halfName);
+
+
+//clculate the power of the number 
+// function  power(x,y){
+// let ans = (x**y);
+// return ans;
+//  }
+//  let ans =power(2,10);
+//  console.log(ans);
+
+
+
+
