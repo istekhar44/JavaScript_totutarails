@@ -37,11 +37,15 @@ for(let i = 1 ; i<=num ; i++){
 console.log(pattern);
 
 //2nd pattern for the (left triangle)
-
-
-
-
-
+let num=5;
+let pattern= ' ';
+for(let i= 1; i <=num ; i++){
+    for(let j = 1; j <= i ; j++){
+        pattern +='*'
+    }
+    pattern += '\n';
+}
+console.log(pattern);
 
 
 //use of continue in the loop  (which skip the itration)
