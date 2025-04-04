@@ -76,7 +76,12 @@
 // console.log(brr);
 
 
-
+// To perform the action in the each element of the array 
+let arr = [3,5,8,9,34,67,89,100]
+arr.forEach((value,index)=>{
+    console.log("Number", value , "Index" , index)
+})
+console.log("arr");
 
 
 
