@@ -63,5 +63,11 @@
 //  console.log(ans);
 
 
-
+// calculate the power 
+// function power(x,y){
+//     let ans =(x**y)
+//     return ans;
+// }
+// let ans = power(2,5);
+// console.log(ans);
 
