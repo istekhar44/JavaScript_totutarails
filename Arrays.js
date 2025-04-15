@@ -23,11 +23,11 @@
 // brr.slice(1,2,'hellow');
 
 // //number into number 
-// let array = ['hellow',20,30,40,50];
-// let ans= array.map((number)=>{
-//    return number*number; 
-// })
-// console.log(ans);
+let array = ['hellow',20,30,40,50];
+let ans= array.map((number)=>{
+   return number*number; 
+})
+console.log(ans);
 
 
 //increment and the decrement of the digit in the array
