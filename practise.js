@@ -24,3 +24,4 @@ const area = calculateRectangleArea(length, width);
 console.log('The area of the rectangle is: ${area}');
 let age = "";
 console.log(age);
+
