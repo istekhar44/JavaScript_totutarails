@@ -1,11 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>DOM Functionalities Demo</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    
+  <h1 id="main-heading">DOM Demo</h1>
+
+  <!-- Content Manipulation -->
+  <p id="text-content">Original text content.</p>
+  <button onclick="changeText()">Change Text</button>
+
+  <!-- Style Manipulation -->
+  <div id="box" style="width: 100px; height: 100px; background: red;"></div>
+  <button onclick="changeStyle()">Change Style</button>
+
+  <!-- Class List -->
+  <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+  <!-- Attributes -->
+  <img id="myImage" src="https://via.placeholder.com/100" alt="Placeholder">
+  <button onclick="changeAttribute()">Change Image</button>
+
+  <!-- Create/Append/Remove Elements -->
+  <div id="container"></div>
+  <button onclick="addElement()">Add Element</button>
+  <button onclick="removeElement()">Remove Last Element</button>
+
+  <!-- Event Handling -->
+  <button id="eventBtn">Click Me</button>
+
+  <!-- Form Inputs -->
+  <input type="text" id="myInput" placeholder="Type something">
+  <button onclick="getInputValue()">Get Input</button>
+
+  <!-- Traversal -->
+  <ul id="myList">
+    <li>Item 1</li>
+    <li id="secondItem">Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button onclick="traverseDOM()">Traverse</button>
+
+  <script>
+    // 1. Change text content
+    function changeText() {
+      document.getElementById("text-content").textContent = "Text changed via DOM!";
+    }
+
+    // 2. Change style
+    function changeStyle() {
+      const box = document.getElementById("box");
+      box.style.backgroundColor = "blue";
+      box.style.borderRadius = "10px";
+    }
+
+    // 3. Toggle class
+    function toggleHighlight() {
+      document.getElementById("box").classList.toggle("highlight");
+    }
+
+    // 4. Change attribute
+    function changeAttribute() {
+      document.getElementById("myImage").setAttribute("src", "https://via.placeholder.com/150");
+    }
+
+    // 5. Create and append element
+    function addElement() {
+      const newDiv = document.createElement("div");
+      newDiv.textContent = "New Element";
+      document.getElementById("container").appendChild(newDiv);
+    }
+
+    // 6. Remove last added element
+    function removeElement() {
+      const container = document.getElementById("container");
+      if (container.lastChild) {
+        container.removeChild(container.lastChild);
+      }
+    }
+
+    // 7. Add event listener
+    document.getElementById("eventBtn").addEventListener("click", function () {
+      alert("Button Clicked!");
+    });
+
+    // 8. Input value
+    function getInputValue() {
+      const input = document.getElementById("myInput");
+      alert("Input value: " + input.value);
+    }
+
+    // 9. Traversal
+    function traverseDOM() {
+      const second = document.getElementById("secondItem");
+      alert("Next Sibling: " + second.nextElementSibling.textContent);
+    }
+
+    // 10. Other DOM methods in console:
+    // Try this in Chrome Developer Console:
+    // document.getElementById("main-heading").innerHTML = "<em>Updated!</em>";
+    // document.title = "New Title";
+    // document.body.style.backgroundColor = "#f0f0f0";
+  </script>
 </body>
 </html>
