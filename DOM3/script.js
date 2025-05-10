@@ -17,6 +17,24 @@
  console.log(headings);
  console.dir(heading);
 
-      //Access the html elemrnt by the 
+
+      //Access the html elemrnt by the Tag name 
+let para = document.getElementsByTagName("heading-class");
+console.log(para);
+console.dir(para);
+
+
+  //access the by usning the query selector
+let hellow = document.querySelector(".heading-class");
+console.log(hellow);
+console.dir(hellow);
+
+            
+            //Manipulation of the properties by using get and the set 
+
+
+
+
+
 
 
